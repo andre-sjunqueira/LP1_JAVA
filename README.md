@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" alt="ilustração de um computador" min-width="400px" max-width="400px" width="400px" align="right">
+<img src="image/java-seeklogo.png.png" width="300px" align="right">
 
 <p align="left"> 
   repositório criado para anexo das atividades das aulas de <strong>Linguagem de Programação</strong>.<br>
