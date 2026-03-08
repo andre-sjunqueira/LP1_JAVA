@@ -1,0 +1,16 @@
+import java.util.Locale;
+
+public class MyFirstJavaProgram {
+    public static void main(String[] args) {
+
+        double janeiro = 15000;
+        double fevereiro = 23000;
+        double marco = 17000;
+
+        double total = janeiro + fevereiro + marco;
+        double media = total / 3;
+
+        System.out.printf(Locale.forLanguageTag("pt-BR"), "Despesa total: R$ %,.2f\n", total);
+        System.out.printf(Locale.forLanguageTag("pt-BR"), "Media mensal: R$ %,.2f\n", media);
+    }
+}
