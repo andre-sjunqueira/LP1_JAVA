@@ -1,8 +1,0 @@
-public class MyFirstJavaProgram {
-    
-   public static void main(String []args) {
-      System.out.println("linha 1"); 
-            System.out.println("linha 2"); 
-
-   }
-}
