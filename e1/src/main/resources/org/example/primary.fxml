@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="874.0" prefWidth="940.0" styleClass="root-pane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="639.0" snapToPixel="false" styleClass="card-header" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="30.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.08" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Pane layoutX="15.0" layoutY="11.0" prefHeight="37.0" prefWidth="40.0" styleClass="logo-icon" AnchorPane.leftAnchor="15.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/codigo-html.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Label fx:id="lblTitle" layoutX="69.0" layoutY="11.0" prefHeight="37.0" prefWidth="302.0" styleClass="header-title" text="SISTEMAS" AnchorPane.leftAnchor="69.0" />
+            <ImageView onMouseClicked="#handleVoltar" fitHeight="24.0" fitWidth="17.0" layoutX="780.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="23.0" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../../assets/fechar-simbolo-de-botao-circular.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="164.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="900.0" styleClass="card" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+         <children>
+            <Label fx:id="lblAtributo1" layoutX="39.0" layoutY="84.0" prefHeight="30.0" prefWidth="250.0" styleClass="input-label" text="atributo1" />
+            <Label layoutX="34.0" layoutY="22.0" prefHeight="35.0" prefWidth="497.0" styleClass="section-title" text="Cadastro" />
+            <Label layoutX="34.0" layoutY="42.0" prefHeight="30.0" prefWidth="423.0" styleClass="section-subtitle" text="Preencha as informações para registrar o item selecionado" />
+            <TextField fx:id="txtAtributo1" layoutX="37.0" layoutY="111.0" prefHeight="30.0" prefWidth="222.0" promptText="digite o valor" styleClass="custom-textfield" AnchorPane.leftAnchor="37.0" />
+            <Label fx:id="lblAtributo2" layoutX="289.0" layoutY="86.0" prefHeight="30.0" prefWidth="250.0" styleClass="input-label" text="atributo2" />
+            <TextField fx:id="txtAtributo2" layoutX="289.0" layoutY="111.0" prefHeight="30.0" prefWidth="240.0" promptText="digite o valor" styleClass="custom-textfield" />
+            <Label fx:id="lblAtributo3" layoutX="562.0" layoutY="84.0" prefHeight="30.0" prefWidth="250.0" styleClass="input-label" text="atributo3" />
+            <TextField fx:id="txtAtributo3" layoutX="561.0" layoutY="111.0" prefHeight="30.0" prefWidth="222.0" promptText="digite o valor" styleClass="custom-textfield" AnchorPane.leftAnchor="561.0" AnchorPane.rightAnchor="36.0" />
+            <Button fx:id="btnCadastrar" layoutX="38.0" layoutY="162.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCadastrar" prefHeight="34.0" prefWidth="750.0" styleClass="btn-primary" text="Cadastrar" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="32.0" />
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.05" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="60.0" layoutY="573.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="851.0" styleClass="card" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="573.0">
+         <children>
+            <Label layoutX="34.0" layoutY="19.0" prefHeight="35.0" prefWidth="497.0" styleClass="section-title" text="Histórico de ações" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="19.0" />
+            <Label layoutX="34.0" layoutY="40.0" prefHeight="30.0" prefWidth="423.0" styleClass="section-subtitle" text="Acompanhe as execuções dos métodos e logs do sistema." AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="39.0" />
+            <TextArea fx:id="txtTerminal" editable="false" layoutX="34.0" layoutY="77.0" prefHeight="158.0" prefWidth="761.0" styleClass="custom-terminal" wrapText="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="77.0" />
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.05" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="41.0" layoutY="405.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="851.0" styleClass="card" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="405.0">
+         <children>
+            <Label layoutX="34.0" layoutY="19.0" prefHeight="35.0" prefWidth="497.0" styleClass="section-title" text="Ações do Objeto" />
+            <Label layoutX="34.0" layoutY="40.0" prefHeight="30.0" prefWidth="423.0" styleClass="section-subtitle" text="Execute os métodos no objeto que você acabou de cadastrar" />
+            <Button fx:id="btnMetodo1" layoutX="36.0" layoutY="85.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMetodo1" prefHeight="30.0" prefWidth="222.0" styleClass="btn-action" text="metodo1" AnchorPane.leftAnchor="35.0" />
+            <Button fx:id="btnMetodo2" layoutX="295.0" layoutY="84.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMetodo2" prefHeight="30.0" prefWidth="230.0" styleClass="btn-action" text="metodo2" />
+            <Button fx:id="btnMetodo3" layoutX="565.0" layoutY="85.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMetodo3" prefHeight="30.0" prefWidth="222.0" styleClass="btn-action" text="metodo3" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="33.0" />
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.05" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <TabPane fx:id="tabPane" layoutX="60.0" layoutY="109.0" prefHeight="44.0" prefWidth="820.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tab1" text="Cliente" />
+            <Tab fx:id="tab2" text="Funcionário" />
+            <Tab fx:id="tab3" text="Item" />
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="874.0" prefWidth="940.0" style="-fx-background-color: #EAECEF;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TelaInicialController">
+   <children>
+      <AnchorPane layoutX="243.0" layoutY="104.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="454.0" style="-fx-background-color: #ffff; -fx-border-radius: 12; -fx-background-radius: 12; -fx-border-color: #E3E9F1;" styleClass="card">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.05" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Circle fill="#4f39f6" layoutX="238.0" layoutY="83.0" radius="29.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="29.0" fitWidth="58.0" layoutX="219.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/entrar.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="112.0" prefHeight="37.0" prefWidth="302.0" styleClass="header-title" text="Bem vindo" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="129.0" prefHeight="37.0" prefWidth="255.0" text="escolha um estabelecimento para começar" textAlignment="CENTER" textFill="#808080ba">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Button fx:id="btnSalao" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="178.0" mnemonicParsing="false" onAction="#goToSalao" prefHeight="36.0" prefWidth="255.0" style="-fx-background-radius: 8;" styleClass="btn-primary" text="Salão de Beleza" textAlignment="CENTER" textFill="WHITE" />
+            <ImageView fitHeight="482.0" fitWidth="480.0" layoutX="-13.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/Coding-bro.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="605.0" prefHeight="58.0" prefWidth="454.0" styleClass="tab-pane" text="Ser programador é aprender todos os dias, não existe uma linha de chegada" textAlignment="CENTER" textFill="#0000002f">
+               <font>
+                  <Font name="Calibri Bold" size="9.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnFeira" layoutX="111.0" layoutY="224.0" mnemonicParsing="false" onAction="#goToFeira" prefHeight="36.0" prefWidth="255.0" style="-fx-background-radius: 8;" styleClass="btn-primary" text="Feira" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnFarmacia" layoutX="110.0" layoutY="270.0" mnemonicParsing="false" onAction="#goToFarmacia" prefHeight="36.0" prefWidth="255.0" style="-fx-background-radius: 8;" styleClass="btn-primary" text="Farmácia" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets left="60.0" right="60.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</Pane>
